@@ -1,0 +1,10 @@
+#gif-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gif {
+  flex: 0 0 auto;
+  margin: 10px;
+}

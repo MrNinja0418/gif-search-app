@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+    <style>
+      /* I know this is a sin, but it's quick */
+      #gif-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gif {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4 mb-4">GIPHY PARTY</h1>
+      <form class="search-form d-flex justify-content-center mb-4">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for a GIF!"
+          class="search-input mr-2"
+        />
+        <input type="submit" class="btn btn-secondary" value="Search" />
+        <button id="remove" class="btn btn-danger ml-2">Remove Images</button>
+      </form>
+      <div id="gif-area" class="row"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
